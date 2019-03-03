@@ -594,7 +594,7 @@ add_theme_support( 'custom-header', array(
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
 
- $creds = '[footer_copyright first="2009"] James M. All rights reserved.<br />All text on this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.<br />This blog uses [footer_genesis_link] and <a href="http://wptouch.com/wptouch/">WPTouch Mobile Suite</a>.<br /> ' . get_num_queries() . ' queries : ' . timer_stop() . 's <img src="' .get_bloginfo('stylesheet_directory'). '/images/espeon.png" alt="espeon" style="height:16px;width:auto;" />';
+ $creds = '[footer_copyright first="2009"] James M. All rights reserved.<br />All text on this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.<br />This blog uses [footer_genesis_link] and <a href="http://wptouch.com/wptouch/">WPTouch Mobile Suite</a>. <a href="https://github.com/chikorita157/Chikorita157AnimeBlogTheme-5.0">Source Code</a><br /> ' . get_num_queries() . ' queries : ' . timer_stop() . 's <img src="' .get_bloginfo('stylesheet_directory'). '/images/espeon.png" alt="espeon" style="height:16px;width:auto;" />';
 
  return  $creds;
 
